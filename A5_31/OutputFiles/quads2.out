@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+m                   int                                     local                                   0                   4                   NULL                
+printInt            int                                     local                                   4                   4                   NULL                
+printStr            int                                     local                                   8                   4                   NULL                
+return              int                                     local                                   12                  4                   NULL                
+t0                  int                                     temporary           2                   16                  4                   NULL                
+t1                  int                                     temporary           3                   20                  4                   NULL                
+t10                 int                                     temporary                               24                  4                   NULL                
+t11                 ptr(char)                               temporary           ", "                28                  4                   NULL                
+t12                 int                                     temporary                               32                  4                   NULL                
+t13                 int                                     temporary                               36                  4                   NULL                
+t14                 ptr(char)                               temporary           ") = "              40                  4                   NULL                
+t15                 int                                     temporary                               44                  4                   NULL                
+t16                 int                                     temporary                               48                  4                   NULL                
+t17                 int                                     temporary           0                   52                  4                   NULL                
+t2                  int                                     temporary           1                   56                  4                   NULL                
+t3                  int                                     temporary                               60                  4                   NULL                
+t4                  int                                     temporary                               64                  4                   NULL                
+t5                  ptr(char)                               temporary           "max("              68                  4                   NULL                
+t6                  int                                     temporary                               72                  4                   NULL                
+t7                  int                                     temporary                               76                  4                   NULL                
+t8                  ptr(char)                               temporary           ", "                80                  4                   NULL                
+t9                  int                                     temporary                               84                  4                   NULL                
+x                   int                                     local               2                   88                  4                   NULL                
+y                   int                                     local               3                   92                  4                   NULL                
+z                   int                                     local               1                   96                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+=                   2                                       t0                  1                   	t0 = 2
+=                   t0                                      x                   2                   	x = t0
+=                   3                                       t1                  3                   	t1 = 3
+=                   t1                                      y                   4                   	y = t1
+=                   1                                       t2                  5                   	t2 = 1
+=                   t2                                      z                   6                   	z = t2
+>                   x                   y                   10                  7                   	if x > y goto 10
+goto                                                        11                  8                   	goto 11
+goto                                                        15                  9                   	goto 15
+goto                                                        13                  10                  	goto 13
+=                   y                                       t3                  11                  	t3 = y
+goto                                                        15                  12                  	goto 15
+=                   x                                       t3                  13                  	t3 = x
+goto                                                        15                  14                  	goto 15
+=                   t3                                      m                   15                  	m = t3
+>                   m                   z                   19                  16                  	if m > z goto 19
+goto                                                        20                  17                  	goto 20
+goto                                                        24                  18                  	goto 24
+goto                                                        22                  19                  	goto 22
+=                   z                                       t4                  20                  	t4 = z
+goto                                                        24                  21                  	goto 24
+=                   m                                       t4                  22                  	t4 = m
+goto                                                        24                  23                  	goto 24
+=                   t4                                      m                   24                  	m = t4
+param                                                       t5                  25                  	param t5
+call                printStr            1                   t6                  26                  	t6 = call printStr, 1
+param                                                       x                   27                  	param x
+call                printInt            1                   t7                  28                  	t7 = call printInt, 1
+param                                                       t8                  29                  	param t8
+call                printStr            1                   t9                  30                  	t9 = call printStr, 1
+param                                                       y                   31                  	param y
+call                printInt            1                   t10                 32                  	t10 = call printInt, 1
+param                                                       t11                 33                  	param t11
+call                printStr            1                   t12                 34                  	t12 = call printStr, 1
+param                                                       z                   35                  	param z
+call                printInt            1                   t13                 36                  	t13 = call printInt, 1
+param                                                       t14                 37                  	param t14
+call                printStr            1                   t15                 38                  	t15 = call printStr, 1
+param                                                       m                   39                  	param m
+call                printInt            1                   t16                 40                  	t16 = call printInt, 1
+=                   0                                       t17                 41                  	t17 = 0
+return                                                      t17                 42                  	return t17

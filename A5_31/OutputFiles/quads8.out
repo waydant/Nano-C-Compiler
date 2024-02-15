@@ -1,0 +1,174 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+f_even              (int) --> (int)                         function                                0                   0                   f_even              
+f_odd               (int) --> (int)                         function                                0                   0                   f_odd               
+fibonacci           (int) --> (int)                         function                                0                   0                   fibonacci           
+main                int                                     function                                0                   0                   main                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: f_even                                                                                              Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+t16                 int                                     temporary           0                   8                   4                   NULL                
+t17                 int                                     temporary           0                   12                  4                   NULL                
+t18                 int                                     temporary           1                   16                  4                   NULL                
+t19                 int                                     temporary                               20                  4                   NULL                
+t20                 int                                     temporary                               24                  4                   NULL                
+t21                 int                                     temporary           2                   28                  4                   NULL                
+t22                 int                                     temporary                               32                  4                   NULL                
+t23                 int                                     temporary                               36                  4                   NULL                
+t24                 int                                     temporary                               40                  4                   NULL                
+t25                 int                                     temporary                               44                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: f_odd                                                                                               Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+t10                 int                                     temporary                               8                   4                   NULL                
+t11                 int                                     temporary           2                   12                  4                   NULL                
+t12                 int                                     temporary                               16                  4                   NULL                
+t13                 int                                     temporary                               20                  4                   NULL                
+t14                 int                                     temporary                               24                  4                   NULL                
+t15                 int                                     temporary                               28                  4                   NULL                
+t6                  int                                     temporary           1                   32                  4                   NULL                
+t7                  int                                     temporary           1                   36                  4                   NULL                
+t8                  int                                     temporary           1                   40                  4                   NULL                
+t9                  int                                     temporary                               44                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: fibonacci                                                                                           Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+t0                  int                                     temporary           2                   8                   4                   NULL                
+t1                  int                                     temporary                               12                  4                   NULL                
+t2                  int                                     temporary           0                   16                  4                   NULL                
+t3                  int                                     temporary                               20                  4                   NULL                
+t4                  int                                     temporary                               24                  4                   NULL                
+t5                  int                                     temporary                               28                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     local               10                  0                   4                   NULL                
+printInt            int                                     local                                   4                   4                   NULL                
+printStr            int                                     local                                   8                   4                   NULL                
+r                   int                                     local                                   12                  4                   NULL                
+return              int                                     local                                   16                  4                   NULL                
+t26                 int                                     temporary           10                  20                  4                   NULL                
+t27                 int                                     temporary                               24                  4                   NULL                
+t28                 ptr(char)                               temporary           "fibo("             28                  4                   NULL                
+t29                 int                                     temporary                               32                  4                   NULL                
+t30                 int                                     temporary                               36                  4                   NULL                
+t31                 ptr(char)                               temporary           ") = "              40                  4                   NULL                
+t32                 int                                     temporary                               44                  4                   NULL                
+t33                 int                                     temporary                               48                  4                   NULL                
+t34                 int                                     temporary           0                   52                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+=                   2                                       t0                  1                   	t0 = 2
+%                   n                   t0                  t1                  2                   	t1 = n % t0
+=                   0                                       t2                  3                   	t2 = 0
+==                  t1                  t2                                      4                   	if t1 == t2 goto 
+goto                                                                            5                   	goto 
+goto                                                        16                  6                   	goto 16
+param                                                       n                   7                   	param n
+call                f_even              1                   t3                  8                   	t3 = call f_even, 1
+goto                                                        14                  9                   	goto 14
+param                                                       n                   10                  	param n
+call                f_odd               1                   t4                  11                  	t4 = call f_odd, 1
+=                   t4                                      t5                  12                  	t5 = t4
+goto                                                        18                  13                  	goto 18
+=                   t3                                      t5                  14                  	t5 = t3
+goto                                                        18                  15                  	goto 18
+==                  t5                  0                   10                  16                  	if t5 == 0 goto 10
+goto                                                        7                   17                  	goto 7
+return                                                      t5                  18                  	return t5
+label                                                       f_odd               19                  f_odd
+=                   1                                       t6                  20                  	t6 = 1
+==                  n                   t6                                      21                  	if n == t6 goto 
+goto                                                                            22                  	goto 
+goto                                                        39                  23                  	goto 39
+=                   1                                       t7                  24                  	t7 = 1
+goto                                                        37                  25                  	goto 37
+=                   1                                       t8                  26                  	t8 = 1
+-                   n                   t8                  t9                  27                  	t9 = n - t8
+param                                                       t9                  28                  	param t9
+call                f_even              1                   t10                 29                  	t10 = call f_even, 1
+=                   2                                       t11                 30                  	t11 = 2
+-                   n                   t11                 t12                 31                  	t12 = n - t11
+param                                                       t12                 32                  	param t12
+call                f_odd               1                   t13                 33                  	t13 = call f_odd, 1
++                   t10                 t13                 t14                 34                  	t14 = t10 + t13
+=                   t14                                     t15                 35                  	t15 = t14
+goto                                                        41                  36                  	goto 41
+=                   t7                                      t15                 37                  	t15 = t7
+goto                                                        41                  38                  	goto 41
+==                  t15                 0                   26                  39                  	if t15 == 0 goto 26
+goto                                                        24                  40                  	goto 24
+return                                                      t15                 41                  	return t15
+label                                                       f_even              42                  f_even
+=                   0                                       t16                 43                  	t16 = 0
+==                  n                   t16                                     44                  	if n == t16 goto 
+goto                                                                            45                  	goto 
+goto                                                        62                  46                  	goto 62
+=                   0                                       t17                 47                  	t17 = 0
+goto                                                        60                  48                  	goto 60
+=                   1                                       t18                 49                  	t18 = 1
+-                   n                   t18                 t19                 50                  	t19 = n - t18
+param                                                       t19                 51                  	param t19
+call                f_odd               1                   t20                 52                  	t20 = call f_odd, 1
+=                   2                                       t21                 53                  	t21 = 2
+-                   n                   t21                 t22                 54                  	t22 = n - t21
+param                                                       t22                 55                  	param t22
+call                f_even              1                   t23                 56                  	t23 = call f_even, 1
++                   t20                 t23                 t24                 57                  	t24 = t20 + t23
+=                   t24                                     t25                 58                  	t25 = t24
+goto                                                        64                  59                  	goto 64
+=                   t17                                     t25                 60                  	t25 = t17
+goto                                                        64                  61                  	goto 64
+==                  t25                 0                   49                  62                  	if t25 == 0 goto 49
+goto                                                        47                  63                  	goto 47
+return                                                      t25                 64                  	return t25
+=                   10                                      t26                 65                  	t26 = 10
+=                   t26                                     n                   66                  	n = t26
+param                                                       n                   67                  	param n
+call                fibonacci           1                   t27                 68                  	t27 = call fibonacci, 1
+=                   t27                                     r                   69                  	r = t27
+param                                                       t28                 70                  	param t28
+call                printStr            1                   t29                 71                  	t29 = call printStr, 1
+param                                                       n                   72                  	param n
+call                printInt            1                   t30                 73                  	t30 = call printInt, 1
+param                                                       t31                 74                  	param t31
+call                printStr            1                   t32                 75                  	t32 = call printStr, 1
+param                                                       r                   76                  	param r
+call                printInt            1                   t33                 77                  	t33 = call printInt, 1
+=                   0                                       t34                 78                  	t34 = 0
+return                                                      t34                 79                  	return t34

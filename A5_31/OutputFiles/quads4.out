@@ -1,0 +1,112 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+swap                (ptr(int) x ptr(int)) --> (void)        function                                0                   0                   swap                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+printInt            int                                     local                                   0                   4                   NULL                
+printStr            int                                     local                                   4                   4                   NULL                
+readInt             int                                     local                                   8                   4                   NULL                
+return              int                                     local                                   12                  4                   NULL                
+swap                int                                     local                                   16                  4                   NULL                
+t0                  ptr(int)                                temporary                               20                  4                   NULL                
+t1                  int                                     temporary                               24                  4                   NULL                
+t10                 int                                     temporary                               28                  4                   NULL                
+t11                 int                                     temporary                               32                  4                   NULL                
+t12                 ptr(int)                                temporary                               36                  4                   NULL                
+t13                 ptr(int)                                temporary                               40                  4                   NULL                
+t14                 int                                     temporary                               44                  4                   NULL                
+t15                 ptr(char)                               temporary           "\nAfter swap:\n"   48                  4                   NULL                
+t16                 int                                     temporary                               52                  4                   NULL                
+t17                 ptr(char)                               temporary           "x = "              56                  4                   NULL                
+t18                 int                                     temporary                               60                  4                   NULL                
+t19                 int                                     temporary                               64                  4                   NULL                
+t2                  ptr(int)                                temporary                               68                  4                   NULL                
+t20                 ptr(char)                               temporary           " y = "             72                  4                   NULL                
+t21                 int                                     temporary                               76                  4                   NULL                
+t22                 int                                     temporary                               80                  4                   NULL                
+t23                 int                                     temporary           0                   84                  4                   NULL                
+t3                  int                                     temporary                               88                  4                   NULL                
+t4                  ptr(char)                               temporary           "Before swap:\n"    92                  4                   NULL                
+t5                  int                                     temporary                               96                  4                   NULL                
+t6                  ptr(char)                               temporary           "x = "              100                 4                   NULL                
+t7                  int                                     temporary                               104                 4                   NULL                
+t8                  int                                     temporary                               108                 4                   NULL                
+t9                  ptr(char)                               temporary           " y = "             112                 4                   NULL                
+x                   int                                     local                                   116                 4                   NULL                
+y                   int                                     local                                   120                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: swap                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+p                   ptr(int)                                parameter                               0                   4                   NULL                
+q                   ptr(int)                                parameter                               4                   4                   NULL                
+t                   int                                     local                                   8                   4                   NULL                
+t24                 int                                     temporary                               12                  4                   NULL                
+t25                 int                                     temporary                               16                  4                   NULL                
+t26                 int                                     temporary                               20                  4                   NULL                
+t27                 int                                     temporary                               24                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+=&                  x                                       t0                  1                   	t0 = &x
+param                                                       t0                  2                   	param t0
+call                readInt             1                   t1                  3                   	t1 = call readInt, 1
+=&                  y                                       t2                  4                   	t2 = &y
+param                                                       t2                  5                   	param t2
+call                readInt             1                   t3                  6                   	t3 = call readInt, 1
+param                                                       t4                  7                   	param t4
+call                printStr            1                   t5                  8                   	t5 = call printStr, 1
+param                                                       t6                  9                   	param t6
+call                printStr            1                   t7                  10                  	t7 = call printStr, 1
+param                                                       x                   11                  	param x
+call                printInt            1                   t8                  12                  	t8 = call printInt, 1
+param                                                       t9                  13                  	param t9
+call                printStr            1                   t10                 14                  	t10 = call printStr, 1
+param                                                       y                   15                  	param y
+call                printInt            1                   t11                 16                  	t11 = call printInt, 1
+=&                  x                                       t12                 17                  	t12 = &x
+param                                                       t12                 18                  	param t12
+=&                  y                                       t13                 19                  	t13 = &y
+param                                                       t13                 20                  	param t13
+call                swap                2                   t14                 21                  	t14 = call swap, 2
+param                                                       t15                 22                  	param t15
+call                printStr            1                   t16                 23                  	t16 = call printStr, 1
+param                                                       t17                 24                  	param t17
+call                printStr            1                   t18                 25                  	t18 = call printStr, 1
+param                                                       x                   26                  	param x
+call                printInt            1                   t19                 27                  	t19 = call printInt, 1
+param                                                       t20                 28                  	param t20
+call                printStr            1                   t21                 29                  	t21 = call printStr, 1
+param                                                       y                   30                  	param y
+call                printInt            1                   t22                 31                  	t22 = call printInt, 1
+=                   0                                       t23                 32                  	t23 = 0
+return                                                      t23                 33                  	return t23
+=*                  p                                       t24                 34                  	t24 = *p
+param                                                       t24                 35                  	param t24
+=                   t24                                     t                   36                  	t = t24
+=*                  p                                       t25                 37                  	t25 = *p
+=*                  q                                       t26                 38                  	t26 = *q
+param                                                       t26                 39                  	param t26
+*=                  t26                                     p                   40                  	*p = t26
+=*                  q                                       t27                 41                  	t27 = *q
+*=                  t                                       q                   42                  	*q = t
+return                                                                          43                  	return 

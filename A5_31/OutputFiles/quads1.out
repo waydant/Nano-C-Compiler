@@ -1,0 +1,57 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+printInt            int                                     local                                   0                   4                   NULL                
+printStr            int                                     local                                   4                   4                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+t0                  int                                     temporary           2                   12                  4                   NULL                
+t1                  int                                     temporary           3                   16                  4                   NULL                
+t10                 int                                     temporary           0                   20                  4                   NULL                
+t2                  int                                     temporary                               24                  4                   NULL                
+t3                  int                                     temporary                               28                  4                   NULL                
+t4                  ptr(char)                               temporary           "+"                 32                  4                   NULL                
+t5                  int                                     temporary                               36                  4                   NULL                
+t6                  int                                     temporary                               40                  4                   NULL                
+t7                  ptr(char)                               temporary           " = "               44                  4                   NULL                
+t8                  int                                     temporary                               48                  4                   NULL                
+t9                  int                                     temporary                               52                  4                   NULL                
+x                   int                                     local               2                   56                  4                   NULL                
+y                   int                                     local               3                   60                  4                   NULL                
+z                   int                                     local                                   64                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+=                   2                                       t0                  1                   	t0 = 2
+=                   t0                                      x                   2                   	x = t0
+=                   3                                       t1                  3                   	t1 = 3
+=                   t1                                      y                   4                   	y = t1
++                   x                   y                   t2                  5                   	t2 = x + y
+=                   t2                                      z                   6                   	z = t2
+param                                                       x                   7                   	param x
+call                printInt            1                   t3                  8                   	t3 = call printInt, 1
+param                                                       t4                  9                   	param t4
+call                printStr            1                   t5                  10                  	t5 = call printStr, 1
+param                                                       y                   11                  	param y
+call                printInt            1                   t6                  12                  	t6 = call printInt, 1
+param                                                       t7                  13                  	param t7
+call                printStr            1                   t8                  14                  	t8 = call printStr, 1
+param                                                       z                   15                  	param z
+call                printInt            1                   t9                  16                  	t9 = call printInt, 1
+=                   0                                       t10                 17                  	t10 = 0
+return                                                      t10                 18                  	return t10
