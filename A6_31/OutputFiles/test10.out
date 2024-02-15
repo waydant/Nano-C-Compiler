@@ -1,0 +1,210 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+arr                 array(10, int)                          global                                  0                   40                  NULL                
+binarySearch        (int x int x int) --> (int)             function                                40                  0                   binarySearch        
+main                int                                     function                                40                  0                   main                
+printInt            (int) --> (int)                         function                                40                  0                   printInt            
+printStr            (ptr(char)) --> (int)                   function                                40                  0                   printStr            
+readInt             (ptr(int)) --> (int)                    function                                40                  0                   readInt             
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: binarySearch                                                                                        Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+l                   int                                     parameter                               0                   4                   NULL                
+mid                 int                                     local                                   4                   4                   NULL                
+r                   int                                     parameter                               8                   4                   NULL                
+return              int                                     local                                   12                  4                   NULL                
+t0                  int                                     temporary                               16                  4                   NULL                
+t1                  int                                     temporary           2                   20                  4                   NULL                
+t10                 int                                     temporary                               24                  4                   NULL                
+t11                 int                                     temporary           1                   28                  4                   NULL                
+t12                 int                                     temporary                               32                  4                   NULL                
+t13                 int                                     temporary                               36                  4                   NULL                
+t14                 int                                     temporary           1                   40                  4                   NULL                
+t15                 int                                     temporary                               44                  4                   NULL                
+t2                  int                                     temporary                               48                  4                   NULL                
+t3                  int                                     temporary                               52                  4                   NULL                
+t4                  int                                     temporary                               56                  4                   NULL                
+t5                  int                                     temporary                               60                  4                   NULL                
+t6                  int                                     temporary                               64                  4                   NULL                
+t7                  int                                     temporary                               68                  4                   NULL                
+t8                  int                                     temporary           1                   72                  4                   NULL                
+t9                  int                                     temporary                               76                  4                   NULL                
+x                   int                                     parameter                               80                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     local               5                   0                   4                   NULL                
+result              int                                     local                                   4                   4                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+t16                 int                                     temporary           5                   12                  4                   NULL                
+t17                 int                                     temporary           0                   16                  4                   NULL                
+t18                 int                                     temporary                               20                  4                   NULL                
+t19                 int                                     temporary           2                   24                  4                   NULL                
+t20                 int                                     temporary           1                   28                  4                   NULL                
+t21                 int                                     temporary                               32                  4                   NULL                
+t22                 int                                     temporary           3                   36                  4                   NULL                
+t23                 int                                     temporary           2                   40                  4                   NULL                
+t24                 int                                     temporary                               44                  4                   NULL                
+t25                 int                                     temporary           4                   48                  4                   NULL                
+t26                 int                                     temporary           3                   52                  4                   NULL                
+t27                 int                                     temporary                               56                  4                   NULL                
+t28                 int                                     temporary           10                  60                  4                   NULL                
+t29                 int                                     temporary           4                   64                  4                   NULL                
+t30                 int                                     temporary                               68                  4                   NULL                
+t31                 int                                     temporary           40                  72                  4                   NULL                
+t32                 int                                     temporary           10                  76                  4                   NULL                
+t33                 int                                     temporary           0                   80                  4                   NULL                
+t34                 int                                     temporary           1                   84                  4                   NULL                
+t35                 int                                     temporary                               88                  4                   NULL                
+t36                 int                                     temporary                               92                  4                   NULL                
+t37                 int                                     temporary           1                   96                  4                   NULL                
+t38                 int                                     temporary                               100                 4                   NULL                
+t39                 ptr(char)                               temporary           "Element is not present in array"104                 8                   NULL                
+t40                 int                                     temporary                               112                 4                   NULL                
+t41                 ptr(char)                               temporary           "Element is present at index "116                 8                   NULL                
+t42                 int                                     temporary                               124                 4                   NULL                
+t43                 int                                     temporary                               128                 4                   NULL                
+t44                 int                                     temporary           0                   132                 4                   NULL                
+x                   int                                     local               10                  136                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printInt                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printStr                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+ch                  ptr(char)                               parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readInt                                                                                             Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+eP                  ptr(int)                                parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+label                                                       binarySearch        1                   FUNCTION START: binarySearch
+>=                  r                   l                   5                   2                   	if r >= l goto 5
+goto                                                        38                  3                   	goto 38
+goto                                                        38                  4                   	goto 38
+-                   r                   l                   t0                  5                   	t0 = r - l
+=                   2                                       t1                  6                   	t1 = 2
+/                   t0                  t1                  t2                  7                   	t2 = t0 / t1
++                   l                   t2                  t3                  8                   	t3 = l + t2
+=                   t3                                      mid                 9                   	mid = t3
+*                   mid                 4                   t4                  10                  	t4 = mid * 4
+=[]                 arr                 t4                  t5                  11                  	t5 = arr[t4]
+==                  t5                  x                   15                  12                  	if t5 == x goto 15
+goto                                                        17                  13                  	goto 17
+goto                                                        17                  14                  	goto 17
+return                                                      mid                 15                  	return mid
+goto                                                        17                  16                  	goto 17
+*                   mid                 4                   t6                  17                  	t6 = mid * 4
+=[]                 arr                 t6                  t7                  18                  	t7 = arr[t6]
+>                   t7                  x                   22                  19                  	if t7 > x goto 22
+goto                                                        30                  20                  	goto 30
+goto                                                        30                  21                  	goto 30
+param                                                       l                   22                  	param l
+=                   1                                       t8                  23                  	t8 = 1
+-                   mid                 t8                  t9                  24                  	t9 = mid - t8
+param                                                       t9                  25                  	param t9
+param                                                       x                   26                  	param x
+call                binarySearch        3                   t10                 27                  	t10 = call binarySearch, 3
+return                                                      t10                 28                  	return t10
+goto                                                        30                  29                  	goto 30
+=                   1                                       t11                 30                  	t11 = 1
++                   mid                 t11                 t12                 31                  	t12 = mid + t11
+param                                                       t12                 32                  	param t12
+param                                                       r                   33                  	param r
+param                                                       x                   34                  	param x
+call                binarySearch        3                   t13                 35                  	t13 = call binarySearch, 3
+return                                                      t13                 36                  	return t13
+goto                                                        38                  37                  	goto 38
+=                   1                                       t14                 38                  	t14 = 1
+=-                  t14                                     t15                 39                  	t15 = - t14
+return                                                      t15                 40                  	return t15
+labelend                                                    binarySearch        41                  FUNCTION END: binarySearch
+label                                                       main                42                  FUNCTION START: main
+=                   5                                       t16                 43                  	t16 = 5
+=                   t16                                     n                   44                  	n = t16
+=                   0                                       t17                 45                  	t17 = 0
+*                   t17                 4                   t18                 46                  	t18 = t17 * 4
+=                   2                                       t19                 47                  	t19 = 2
+[]=                 t18                 t19                 arr                 48                  	arr[t18] = t19
+=                   1                                       t20                 49                  	t20 = 1
+*                   t20                 4                   t21                 50                  	t21 = t20 * 4
+=                   3                                       t22                 51                  	t22 = 3
+[]=                 t21                 t22                 arr                 52                  	arr[t21] = t22
+=                   2                                       t23                 53                  	t23 = 2
+*                   t23                 4                   t24                 54                  	t24 = t23 * 4
+=                   4                                       t25                 55                  	t25 = 4
+[]=                 t24                 t25                 arr                 56                  	arr[t24] = t25
+=                   3                                       t26                 57                  	t26 = 3
+*                   t26                 4                   t27                 58                  	t27 = t26 * 4
+=                   10                                      t28                 59                  	t28 = 10
+[]=                 t27                 t28                 arr                 60                  	arr[t27] = t28
+=                   4                                       t29                 61                  	t29 = 4
+*                   t29                 4                   t30                 62                  	t30 = t29 * 4
+=                   40                                      t31                 63                  	t31 = 40
+[]=                 t30                 t31                 arr                 64                  	arr[t30] = t31
+=                   10                                      t32                 65                  	t32 = 10
+=                   t32                                     x                   66                  	x = t32
+=                   0                                       t33                 67                  	t33 = 0
+param                                                       t33                 68                  	param t33
+=                   1                                       t34                 69                  	t34 = 1
+-                   n                   t34                 t35                 70                  	t35 = n - t34
+param                                                       t35                 71                  	param t35
+param                                                       x                   72                  	param x
+call                binarySearch        3                   t36                 73                  	t36 = call binarySearch, 3
+=                   t36                                     result              74                  	result = t36
+=                   1                                       t37                 75                  	t37 = 1
+=-                  t37                                     t38                 76                  	t38 = - t37
+==                  result              t38                 80                  77                  	if result == t38 goto 80
+goto                                                        84                  78                  	goto 84
+goto                                                        89                  79                  	goto 89
+=str                0                                       t39                 80                  	t39 = "Element is not present in array"
+param                                                       t39                 81                  	param t39
+call                printStr            1                   t40                 82                  	t40 = call printStr, 1
+goto                                                        89                  83                  	goto 89
+=str                1                                       t41                 84                  	t41 = "Element is present at index "
+param                                                       t41                 85                  	param t41
+call                printStr            1                   t42                 86                  	t42 = call printStr, 1
+param                                                       result              87                  	param result
+call                printInt            1                   t43                 88                  	t43 = call printInt, 1
+=                   0                                       t44                 89                  	t44 = 0
+return                                                      t44                 90                  	return t44
+labelend                                                    main                91                  FUNCTION END: main

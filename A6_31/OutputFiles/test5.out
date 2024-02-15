@@ -1,0 +1,101 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+printInt            (int) --> (int)                         function                                0                   0                   printInt            
+printStr            (ptr(char)) --> (int)                   function                                0                   0                   printStr            
+readInt             (ptr(int)) --> (int)                    function                                0                   0                   readInt             
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+i                   int                                     local               0                   0                   4                   NULL                
+n                   int                                     local                                   4                   4                   NULL                
+r                   int                                     local               1                   8                   4                   NULL                
+return              int                                     local                                   12                  4                   NULL                
+t0                  int                                     temporary           0                   16                  4                   NULL                
+t1                  int                                     temporary           1                   20                  4                   NULL                
+t10                 int                                     temporary                               24                  4                   NULL                
+t11                 int                                     temporary                               28                  4                   NULL                
+t12                 int                                     temporary           0                   32                  4                   NULL                
+t2                  ptr(int)                                temporary                               36                  8                   NULL                
+t3                  int                                     temporary                               44                  4                   NULL                
+t4                  int                                     temporary           1                   48                  4                   NULL                
+t5                  int                                     temporary           1                   52                  4                   NULL                
+t6                  int                                     temporary                               56                  4                   NULL                
+t7                  int                                     temporary                               60                  4                   NULL                
+t8                  int                                     temporary                               64                  4                   NULL                
+t9                  ptr(char)                               temporary           "! = "              68                  8                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printInt                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printStr                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+ch                  ptr(char)                               parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readInt                                                                                             Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+eP                  ptr(int)                                parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+label                                                       main                1                   FUNCTION START: main
+=                   0                                       t0                  2                   	t0 = 0
+=                   t0                                      i                   3                   	i = t0
+=                   1                                       t1                  4                   	t1 = 1
+=                   t1                                      r                   5                   	r = t1
+=&                  n                                       t2                  6                   	t2 = &n
+param                                                       t2                  7                   	param t2
+call                readInt             1                   t3                  8                   	t3 = call readInt, 1
+=                   1                                       t4                  9                   	t4 = 1
+=                   t4                                      i                   10                  	i = t4
+<=                  i                   n                   17                  11                  	if i <= n goto 17
+goto                                                        20                  12                  	goto 20
+=                   1                                       t5                  13                  	t5 = 1
++                   i                   t5                  t6                  14                  	t6 = i + t5
+=                   t6                                      i                   15                  	i = t6
+goto                                                        11                  16                  	goto 11
+*                   r                   i                   t7                  17                  	t7 = r * i
+=                   t7                                      r                   18                  	r = t7
+goto                                                        13                  19                  	goto 13
+param                                                       n                   20                  	param n
+call                printInt            1                   t8                  21                  	t8 = call printInt, 1
+=str                0                                       t9                  22                  	t9 = "! = "
+param                                                       t9                  23                  	param t9
+call                printStr            1                   t10                 24                  	t10 = call printStr, 1
+param                                                       r                   25                  	param r
+call                printInt            1                   t11                 26                  	t11 = call printInt, 1
+=                   0                                       t12                 27                  	t12 = 0
+return                                                      t12                 28                  	return t12
+labelend                                                    main                29                  FUNCTION END: main

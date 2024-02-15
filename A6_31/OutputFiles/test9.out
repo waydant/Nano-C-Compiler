@@ -1,0 +1,287 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+arr                 array(20, int)                          global                                  0                   80                  NULL                
+bubbleSort          (int) --> (void)                        function                                80                  0                   bubbleSort          
+main                int                                     function                                80                  0                   main                
+printArray          (int) --> (void)                        function                                80                  0                   printArray          
+printInt            (int) --> (int)                         function                                80                  0                   printInt            
+printStr            (ptr(char)) --> (int)                   function                                80                  0                   printStr            
+readArray           (int) --> (void)                        function                                80                  0                   readArray           
+readInt             (ptr(int)) --> (int)                    function                                80                  0                   readInt             
+swap                (ptr(int) x ptr(int)) --> (void)        function                                80                  0                   swap                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: bubbleSort                                                                                          Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+i                   int                                     local                                   0                   4                   NULL                
+j                   int                                     local                                   4                   4                   NULL                
+n                   int                                     parameter                               8                   4                   NULL                
+t22                 int                                     temporary           0                   12                  4                   NULL                
+t23                 int                                     temporary           1                   16                  4                   NULL                
+t24                 int                                     temporary                               20                  4                   NULL                
+t25                 int                                     temporary           1                   24                  4                   NULL                
+t26                 int                                     temporary                               28                  4                   NULL                
+t27                 int                                     temporary           0                   32                  4                   NULL                
+t28                 int                                     temporary                               36                  4                   NULL                
+t29                 int                                     temporary           1                   40                  4                   NULL                
+t30                 int                                     temporary                               44                  4                   NULL                
+t31                 int                                     temporary           1                   48                  4                   NULL                
+t32                 int                                     temporary                               52                  4                   NULL                
+t33                 int                                     temporary                               56                  4                   NULL                
+t34                 int                                     temporary                               60                  4                   NULL                
+t35                 int                                     temporary           1                   64                  4                   NULL                
+t36                 int                                     temporary                               68                  4                   NULL                
+t37                 int                                     temporary                               72                  4                   NULL                
+t38                 int                                     temporary                               76                  4                   NULL                
+t39                 int                                     temporary                               80                  4                   NULL                
+t40                 ptr(array(20, int))                     temporary                               84                  8                   NULL                
+t41                 int                                     temporary           1                   92                  4                   NULL                
+t42                 int                                     temporary                               96                  4                   NULL                
+t43                 int                                     temporary                               100                 4                   NULL                
+t44                 ptr(array(20, int))                     temporary                               104                 8                   NULL                
+t45                 void                                    temporary                               112                 0                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     local                                   0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+t46                 ptr(char)                               temporary           "Input array size: \n"8                   8                   NULL                
+t47                 int                                     temporary                               16                  4                   NULL                
+t48                 ptr(int)                                temporary                               20                  8                   NULL                
+t49                 int                                     temporary                               28                  4                   NULL                
+t50                 ptr(char)                               temporary           "Input array elements: \n"32                  8                   NULL                
+t51                 int                                     temporary                               40                  4                   NULL                
+t52                 void                                    temporary                               44                  0                   NULL                
+t53                 ptr(char)                               temporary           "Input array: \n"   44                  8                   NULL                
+t54                 int                                     temporary                               52                  4                   NULL                
+t55                 void                                    temporary                               56                  0                   NULL                
+t56                 void                                    temporary                               56                  0                   NULL                
+t57                 ptr(char)                               temporary           "Sorted array: \n"  56                  8                   NULL                
+t58                 int                                     temporary                               64                  4                   NULL                
+t59                 void                                    temporary                               68                  0                   NULL                
+t60                 int                                     temporary           0                   68                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printArray                                                                                          Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+i                   int                                     local                                   0                   4                   NULL                
+size                int                                     parameter                               4                   4                   NULL                
+t12                 int                                     temporary           0                   8                   4                   NULL                
+t13                 int                                     temporary           1                   12                  4                   NULL                
+t14                 int                                     temporary                               16                  4                   NULL                
+t15                 int                                     temporary                               20                  4                   NULL                
+t16                 int                                     temporary                               24                  4                   NULL                
+t17                 int                                     temporary                               28                  4                   NULL                
+t18                 ptr(char)                               temporary           " "                 32                  8                   NULL                
+t19                 int                                     temporary                               40                  4                   NULL                
+t20                 ptr(char)                               temporary           "\n"                44                  8                   NULL                
+t21                 int                                     temporary                               52                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printInt                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printStr                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+ch                  ptr(char)                               parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readArray                                                                                           Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+i                   int                                     local                                   0                   4                   NULL                
+m                   int                                     local                                   4                   4                   NULL                
+size                int                                     parameter                               8                   4                   NULL                
+t10                 int                                     temporary                               12                  4                   NULL                
+t11                 int                                     temporary                               16                  4                   NULL                
+t4                  int                                     temporary           0                   20                  4                   NULL                
+t5                  int                                     temporary           1                   24                  4                   NULL                
+t6                  int                                     temporary                               28                  4                   NULL                
+t7                  ptr(char)                               temporary           "Input next element\n"32                  8                   NULL                
+t8                  int                                     temporary                               40                  4                   NULL                
+t9                  ptr(int)                                temporary                               44                  8                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readInt                                                                                             Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+eP                  ptr(int)                                parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: swap                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+p                   ptr(int)                                parameter                               0                   8                   NULL                
+q                   ptr(int)                                parameter                               8                   8                   NULL                
+t                   int                                     local                                   16                  4                   NULL                
+t0                  int                                     temporary                               20                  4                   NULL                
+t1                  int                                     temporary                               24                  4                   NULL                
+t2                  int                                     temporary                               28                  4                   NULL                
+t3                  int                                     temporary                               32                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+label                                                       swap                1                   FUNCTION START: swap
+=*                  p                                       t0                  2                   	t0 = *p
+=                   t0                                      t                   3                   	t = t0
+=*                  p                                       t1                  4                   	t1 = *p
+=*                  q                                       t2                  5                   	t2 = *q
+*=                  t2                                      p                   6                   	*p = t2
+=*                  q                                       t3                  7                   	t3 = *q
+*=                  t                                       q                   8                   	*q = t
+labelend                                                    swap                9                   FUNCTION END: swap
+label                                                       readArray           10                  FUNCTION START: readArray
+=                   0                                       t4                  11                  	t4 = 0
+=                   t4                                      i                   12                  	i = t4
+<                   i                   size                19                  13                  	if i < size goto 19
+goto                                                        29                  14                  	goto 29
+=                   1                                       t5                  15                  	t5 = 1
++                   i                   t5                  t6                  16                  	t6 = i + t5
+=                   t6                                      i                   17                  	i = t6
+goto                                                        13                  18                  	goto 13
+=str                0                                       t7                  19                  	t7 = "Input next element\n"
+param                                                       t7                  20                  	param t7
+call                printStr            1                   t8                  21                  	t8 = call printStr, 1
+=&                  m                                       t9                  22                  	t9 = &m
+param                                                       t9                  23                  	param t9
+call                readInt             1                   t10                 24                  	t10 = call readInt, 1
+=                   t10                                     m                   25                  	m = t10
+*                   i                   4                   t11                 26                  	t11 = i * 4
+[]=                 t11                 m                   arr                 27                  	arr[t11] = m
+goto                                                        15                  28                  	goto 15
+labelend                                                    readArray           29                  FUNCTION END: readArray
+label                                                       printArray          30                  FUNCTION START: printArray
+=                   0                                       t12                 31                  	t12 = 0
+=                   t12                                     i                   32                  	i = t12
+<                   i                   size                39                  33                  	if i < size goto 39
+goto                                                        47                  34                  	goto 47
+=                   1                                       t13                 35                  	t13 = 1
++                   i                   t13                 t14                 36                  	t14 = i + t13
+=                   t14                                     i                   37                  	i = t14
+goto                                                        33                  38                  	goto 33
+*                   i                   4                   t15                 39                  	t15 = i * 4
+=[]                 arr                 t15                 t16                 40                  	t16 = arr[t15]
+param                                                       t16                 41                  	param t16
+call                printInt            1                   t17                 42                  	t17 = call printInt, 1
+=str                1                                       t18                 43                  	t18 = " "
+param                                                       t18                 44                  	param t18
+call                printStr            1                   t19                 45                  	t19 = call printStr, 1
+goto                                                        35                  46                  	goto 35
+=str                2                                       t20                 47                  	t20 = "\n"
+param                                                       t20                 48                  	param t20
+call                printStr            1                   t21                 49                  	t21 = call printStr, 1
+labelend                                                    printArray          50                  FUNCTION END: printArray
+label                                                       bubbleSort          51                  FUNCTION START: bubbleSort
+=                   0                                       t22                 52                  	t22 = 0
+=                   t22                                     i                   53                  	i = t22
+=                   1                                       t23                 54                  	t23 = 1
+-                   n                   t23                 t24                 55                  	t24 = n - t23
+<                   i                   t24                 62                  56                  	if i < t24 goto 62
+goto                                                        94                  57                  	goto 94
+=                   1                                       t25                 58                  	t25 = 1
++                   i                   t25                 t26                 59                  	t26 = i + t25
+=                   t26                                     i                   60                  	i = t26
+goto                                                        54                  61                  	goto 54
+=                   0                                       t27                 62                  	t27 = 0
+=                   t27                                     j                   63                  	j = t27
+-                   n                   i                   t28                 64                  	t28 = n - i
+=                   1                                       t29                 65                  	t29 = 1
+-                   t28                 t29                 t30                 66                  	t30 = t28 - t29
+<                   j                   t30                 73                  67                  	if j < t30 goto 73
+goto                                                        58                  68                  	goto 58
+=                   1                                       t31                 69                  	t31 = 1
++                   j                   t31                 t32                 70                  	t32 = j + t31
+=                   t32                                     j                   71                  	j = t32
+goto                                                        64                  72                  	goto 64
+*                   j                   4                   t33                 73                  	t33 = j * 4
+=[]                 arr                 t33                 t34                 74                  	t34 = arr[t33]
+=                   1                                       t35                 75                  	t35 = 1
++                   j                   t35                 t36                 76                  	t36 = j + t35
+*                   t36                 4                   t37                 77                  	t37 = t36 * 4
+=[]                 arr                 t37                 t38                 78                  	t38 = arr[t37]
+>                   t34                 t38                 82                  79                  	if t34 > t38 goto 82
+goto                                                        69                  80                  	goto 69
+goto                                                        92                  81                  	goto 92
+*                   j                   4                   t39                 82                  	t39 = j * 4
+=&                  arr                                     t40                 83                  	t40 = &arr
+param                                                       t40                 84                  	param t40
+=                   1                                       t41                 85                  	t41 = 1
++                   j                   t41                 t42                 86                  	t42 = j + t41
+*                   t42                 4                   t43                 87                  	t43 = t42 * 4
+=&                  arr                                     t44                 88                  	t44 = &arr
+param                                                       t44                 89                  	param t44
+call                swap                2                   t45                 90                  	t45 = call swap, 2
+goto                                                        69                  91                  	goto 69
+goto                                                        69                  92                  	goto 69
+goto                                                        58                  93                  	goto 58
+labelend                                                    bubbleSort          94                  FUNCTION END: bubbleSort
+label                                                       main                95                  FUNCTION START: main
+=str                3                                       t46                 96                  	t46 = "Input array size: \n"
+param                                                       t46                 97                  	param t46
+call                printStr            1                   t47                 98                  	t47 = call printStr, 1
+=&                  n                                       t48                 99                  	t48 = &n
+param                                                       t48                 100                 	param t48
+call                readInt             1                   t49                 101                 	t49 = call readInt, 1
+=str                4                                       t50                 102                 	t50 = "Input array elements: \n"
+param                                                       t50                 103                 	param t50
+call                printStr            1                   t51                 104                 	t51 = call printStr, 1
+param                                                       n                   105                 	param n
+call                readArray           1                   t52                 106                 	t52 = call readArray, 1
+=str                5                                       t53                 107                 	t53 = "Input array: \n"
+param                                                       t53                 108                 	param t53
+call                printStr            1                   t54                 109                 	t54 = call printStr, 1
+param                                                       n                   110                 	param n
+call                printArray          1                   t55                 111                 	t55 = call printArray, 1
+param                                                       n                   112                 	param n
+call                bubbleSort          1                   t56                 113                 	t56 = call bubbleSort, 1
+=str                6                                       t57                 114                 	t57 = "Sorted array: \n"
+param                                                       t57                 115                 	param t57
+call                printStr            1                   t58                 116                 	t58 = call printStr, 1
+param                                                       n                   117                 	param n
+call                printArray          1                   t59                 118                 	t59 = call printArray, 1
+=                   0                                       t60                 119                 	t60 = 0
+return                                                      t60                 120                 	return t60
+labelend                                                    main                121                 FUNCTION END: main

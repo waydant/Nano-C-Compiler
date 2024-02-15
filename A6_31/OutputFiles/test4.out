@@ -1,0 +1,149 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+printInt            (int) --> (int)                         function                                0                   0                   printInt            
+printStr            (ptr(char)) --> (int)                   function                                0                   0                   printStr            
+readInt             (ptr(int)) --> (int)                    function                                0                   0                   readInt             
+swap                (ptr(int) x ptr(int)) --> (void)        function                                0                   0                   swap                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+return              int                                     local                                   0                   4                   NULL                
+t10                 ptr(char)                               temporary           "x = "              4                   8                   NULL                
+t11                 int                                     temporary                               12                  4                   NULL                
+t12                 int                                     temporary                               16                  4                   NULL                
+t13                 ptr(char)                               temporary           " y = "             20                  8                   NULL                
+t14                 int                                     temporary                               28                  4                   NULL                
+t15                 int                                     temporary                               32                  4                   NULL                
+t16                 ptr(int)                                temporary                               36                  8                   NULL                
+t17                 ptr(int)                                temporary                               44                  8                   NULL                
+t18                 void                                    temporary                               52                  0                   NULL                
+t19                 ptr(char)                               temporary           "\nAfter swap:\n"   52                  8                   NULL                
+t20                 int                                     temporary                               60                  4                   NULL                
+t21                 ptr(char)                               temporary           "x = "              64                  8                   NULL                
+t22                 int                                     temporary                               72                  4                   NULL                
+t23                 int                                     temporary                               76                  4                   NULL                
+t24                 ptr(char)                               temporary           " y = "             80                  8                   NULL                
+t25                 int                                     temporary                               88                  4                   NULL                
+t26                 int                                     temporary                               92                  4                   NULL                
+t27                 int                                     temporary           0                   96                  4                   NULL                
+t4                  ptr(int)                                temporary                               100                 8                   NULL                
+t5                  int                                     temporary                               108                 4                   NULL                
+t6                  ptr(int)                                temporary                               112                 8                   NULL                
+t7                  int                                     temporary                               120                 4                   NULL                
+t8                  ptr(char)                               temporary           "Before swap:\n"    124                 8                   NULL                
+t9                  int                                     temporary                               132                 4                   NULL                
+x                   int                                     local                                   136                 4                   NULL                
+y                   int                                     local                                   140                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printInt                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printStr                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+ch                  ptr(char)                               parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readInt                                                                                             Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+eP                  ptr(int)                                parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: swap                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+p                   ptr(int)                                parameter                               0                   8                   NULL                
+q                   ptr(int)                                parameter                               8                   8                   NULL                
+t                   int                                     local                                   16                  4                   NULL                
+t0                  int                                     temporary                               20                  4                   NULL                
+t1                  int                                     temporary                               24                  4                   NULL                
+t2                  int                                     temporary                               28                  4                   NULL                
+t3                  int                                     temporary                               32                  4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+label                                                       swap                1                   FUNCTION START: swap
+=*                  p                                       t0                  2                   	t0 = *p
+=                   t0                                      t                   3                   	t = t0
+=*                  p                                       t1                  4                   	t1 = *p
+=*                  q                                       t2                  5                   	t2 = *q
+*=                  t2                                      p                   6                   	*p = t2
+=*                  q                                       t3                  7                   	t3 = *q
+*=                  t                                       q                   8                   	*q = t
+return                                                                          9                   	return 
+labelend                                                    swap                10                  FUNCTION END: swap
+label                                                       main                11                  FUNCTION START: main
+=&                  x                                       t4                  12                  	t4 = &x
+param                                                       t4                  13                  	param t4
+call                readInt             1                   t5                  14                  	t5 = call readInt, 1
+=&                  y                                       t6                  15                  	t6 = &y
+param                                                       t6                  16                  	param t6
+call                readInt             1                   t7                  17                  	t7 = call readInt, 1
+=str                0                                       t8                  18                  	t8 = "Before swap:\n"
+param                                                       t8                  19                  	param t8
+call                printStr            1                   t9                  20                  	t9 = call printStr, 1
+=str                1                                       t10                 21                  	t10 = "x = "
+param                                                       t10                 22                  	param t10
+call                printStr            1                   t11                 23                  	t11 = call printStr, 1
+param                                                       x                   24                  	param x
+call                printInt            1                   t12                 25                  	t12 = call printInt, 1
+=str                2                                       t13                 26                  	t13 = " y = "
+param                                                       t13                 27                  	param t13
+call                printStr            1                   t14                 28                  	t14 = call printStr, 1
+param                                                       y                   29                  	param y
+call                printInt            1                   t15                 30                  	t15 = call printInt, 1
+=&                  x                                       t16                 31                  	t16 = &x
+param                                                       t16                 32                  	param t16
+=&                  y                                       t17                 33                  	t17 = &y
+param                                                       t17                 34                  	param t17
+call                swap                2                   t18                 35                  	t18 = call swap, 2
+=str                3                                       t19                 36                  	t19 = "\nAfter swap:\n"
+param                                                       t19                 37                  	param t19
+call                printStr            1                   t20                 38                  	t20 = call printStr, 1
+=str                4                                       t21                 39                  	t21 = "x = "
+param                                                       t21                 40                  	param t21
+call                printStr            1                   t22                 41                  	t22 = call printStr, 1
+param                                                       x                   42                  	param x
+call                printInt            1                   t23                 43                  	t23 = call printInt, 1
+=str                5                                       t24                 44                  	t24 = " y = "
+param                                                       t24                 45                  	param t24
+call                printStr            1                   t25                 46                  	t25 = call printStr, 1
+param                                                       y                   47                  	param y
+call                printInt            1                   t26                 48                  	t26 = call printInt, 1
+=                   0                                       t27                 49                  	t27 = 0
+return                                                      t27                 50                  	return t27
+labelend                                                    main                51                  FUNCTION END: main

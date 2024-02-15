@@ -1,0 +1,168 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: global                                                                                              Parent Name: None
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+main                int                                     function                                0                   0                   main                
+printInt            (int) --> (int)                         function                                0                   0                   printInt            
+printStr            (ptr(char)) --> (int)                   function                                0                   0                   printStr            
+readInt             (ptr(int)) --> (int)                    function                                0                   0                   readInt             
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: main                                                                                                Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+a                   array(10, int)                          local                                   0                   40                  NULL                
+i                   int                                     local                                   40                  4                   NULL                
+m                   int                                     local                                   44                  4                   NULL                
+n                   int                                     local                                   48                  4                   NULL                
+return              int                                     local                                   52                  4                   NULL                
+t0                  ptr(int)                                temporary                               56                  8                   NULL                
+t1                  int                                     temporary                               64                  4                   NULL                
+t10                 int                                     temporary                               68                  4                   NULL                
+t11                 int                                     temporary           1                   72                  4                   NULL                
+t12                 int                                     temporary           1                   76                  4                   NULL                
+t13                 int                                     temporary                               80                  4                   NULL                
+t14                 int                                     temporary                               84                  4                   NULL                
+t15                 int                                     temporary                               88                  4                   NULL                
+t16                 int                                     temporary                               92                  4                   NULL                
+t17                 int                                     temporary                               96                  4                   NULL                
+t18                 ptr(char)                               temporary           "Max of: "          100                 8                   NULL                
+t19                 int                                     temporary                               108                 4                   NULL                
+t2                  int                                     temporary           0                   112                 4                   NULL                
+t20                 int                                     temporary           0                   116                 4                   NULL                
+t21                 int                                     temporary                               120                 4                   NULL                
+t22                 int                                     temporary                               124                 4                   NULL                
+t23                 int                                     temporary                               128                 4                   NULL                
+t24                 int                                     temporary           1                   132                 4                   NULL                
+t25                 int                                     temporary           1                   136                 4                   NULL                
+t26                 int                                     temporary                               140                 4                   NULL                
+t27                 ptr(char)                               temporary           ", "                144                 8                   NULL                
+t28                 int                                     temporary                               152                 4                   NULL                
+t29                 int                                     temporary                               156                 4                   NULL                
+t3                  int                                     temporary           1                   160                 4                   NULL                
+t30                 int                                     temporary                               164                 4                   NULL                
+t31                 int                                     temporary                               168                 4                   NULL                
+t32                 ptr(char)                               temporary           ": = "              172                 8                   NULL                
+t33                 int                                     temporary                               180                 4                   NULL                
+t34                 int                                     temporary                               184                 4                   NULL                
+t35                 int                                     temporary           0                   188                 4                   NULL                
+t4                  int                                     temporary                               192                 4                   NULL                
+t5                  ptr(int)                                temporary                               196                 8                   NULL                
+t6                  int                                     temporary                               204                 4                   NULL                
+t7                  int                                     temporary                               208                 4                   NULL                
+t8                  int                                     temporary           0                   212                 4                   NULL                
+t9                  int                                     temporary                               216                 4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printInt                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+n                   int                                     parameter                               0                   4                   NULL                
+return              int                                     local                                   4                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: printStr                                                                                            Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+ch                  ptr(char)                               parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Symbol Table Name: readInt                                                                                             Parent Name: global
+--------------------------------------------------------------------------------------------------------------------------------------------
+Name                Type                                    Category            Initial Value       Offset              Size                Nested Table        
+
+eP                  ptr(int)                                parameter                               0                   8                   NULL                
+return              int                                     local                                   8                   4                   NULL                
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+============================================================================================================================================
+                              Quad Array
+============================================================================================================================================
+Op                  arg1                arg2                result              Index               Code in text
+       --------------------------------------------------------------------------------------------------------------------------------------------
+label                                                       main                1                   FUNCTION START: main
+=&                  n                                       t0                  2                   	t0 = &n
+param                                                       t0                  3                   	param t0
+call                readInt             1                   t1                  4                   	t1 = call readInt, 1
+=                   0                                       t2                  5                   	t2 = 0
+=                   t2                                      i                   6                   	i = t2
+<                   i                   n                   13                  7                   	if i < n goto 13
+goto                                                        19                  8                   	goto 19
+=                   1                                       t3                  9                   	t3 = 1
++                   i                   t3                  t4                  10                  	t4 = i + t3
+=                   t4                                      i                   11                  	i = t4
+goto                                                        7                   12                  	goto 7
+=&                  m                                       t5                  13                  	t5 = &m
+param                                                       t5                  14                  	param t5
+call                readInt             1                   t6                  15                  	t6 = call readInt, 1
+*                   i                   4                   t7                  16                  	t7 = i * 4
+[]=                 t7                  m                   a                   17                  	a[t7] = m
+goto                                                        9                   18                  	goto 9
+=                   0                                       t8                  19                  	t8 = 0
+*                   t8                  4                   t9                  20                  	t9 = t8 * 4
+=[]                 a                   t9                  t10                 21                  	t10 = a[t9]
+=                   t10                                     m                   22                  	m = t10
+=                   1                                       t11                 23                  	t11 = 1
+=                   t11                                     i                   24                  	i = t11
+<                   i                   n                   31                  25                  	if i < n goto 31
+goto                                                        41                  26                  	goto 41
+=                   1                                       t12                 27                  	t12 = 1
++                   i                   t12                 t13                 28                  	t13 = i + t12
+=                   t13                                     i                   29                  	i = t13
+goto                                                        25                  30                  	goto 25
+*                   i                   4                   t14                 31                  	t14 = i * 4
+=[]                 a                   t14                 t15                 32                  	t15 = a[t14]
+>                   t15                 m                   36                  33                  	if t15 > m goto 36
+goto                                                        27                  34                  	goto 27
+goto                                                        40                  35                  	goto 40
+*                   i                   4                   t16                 36                  	t16 = i * 4
+=[]                 a                   t16                 t17                 37                  	t17 = a[t16]
+=                   t17                                     m                   38                  	m = t17
+goto                                                        27                  39                  	goto 27
+goto                                                        27                  40                  	goto 27
+=str                0                                       t18                 41                  	t18 = "Max of: "
+param                                                       t18                 42                  	param t18
+call                printStr            1                   t19                 43                  	t19 = call printStr, 1
+=                   0                                       t20                 44                  	t20 = 0
+*                   t20                 4                   t21                 45                  	t21 = t20 * 4
+=[]                 a                   t21                 t22                 46                  	t22 = a[t21]
+param                                                       t22                 47                  	param t22
+call                printInt            1                   t23                 48                  	t23 = call printInt, 1
+=                   1                                       t24                 49                  	t24 = 1
+=                   t24                                     i                   50                  	i = t24
+<                   i                   n                   57                  51                  	if i < n goto 57
+goto                                                        65                  52                  	goto 65
+=                   1                                       t25                 53                  	t25 = 1
++                   i                   t25                 t26                 54                  	t26 = i + t25
+=                   t26                                     i                   55                  	i = t26
+goto                                                        51                  56                  	goto 51
+=str                1                                       t27                 57                  	t27 = ", "
+param                                                       t27                 58                  	param t27
+call                printStr            1                   t28                 59                  	t28 = call printStr, 1
+*                   i                   4                   t29                 60                  	t29 = i * 4
+=[]                 a                   t29                 t30                 61                  	t30 = a[t29]
+param                                                       t30                 62                  	param t30
+call                printInt            1                   t31                 63                  	t31 = call printInt, 1
+goto                                                        53                  64                  	goto 53
+=str                2                                       t32                 65                  	t32 = ": = "
+param                                                       t32                 66                  	param t32
+call                printStr            1                   t33                 67                  	t33 = call printStr, 1
+param                                                       m                   68                  	param m
+call                printInt            1                   t34                 69                  	t34 = call printInt, 1
+=                   0                                       t35                 70                  	t35 = 0
+return                                                      t35                 71                  	return t35
+labelend                                                    main                72                  FUNCTION END: main
